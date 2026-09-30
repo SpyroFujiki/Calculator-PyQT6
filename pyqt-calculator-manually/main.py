@@ -119,6 +119,10 @@ class Main(QWidget):
 
     def calculate(self):
         items_to_calculate = self.entrybox.text()
+        
+        while len(items_to_calculate) > 1 and items_to_calculate[0] == '0':
+            items_to_calculate = items_to_calculate[1:]
+
 
         try:
             if items_to_calculate:
