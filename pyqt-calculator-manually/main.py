@@ -7,7 +7,7 @@ class Main(QWidget):
         self.setWindowTitle('Calculator')
         self.setFixedSize(380, 500)
         self.show()
-        self.setStyleSheet('background:black; font-size:30px;')
+        self.setStyleSheet('background:black; font-size:30px; color:white;')
         main_layout = QVBoxLayout()
         button_layout = QGridLayout()
 
