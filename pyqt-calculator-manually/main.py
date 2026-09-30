@@ -13,7 +13,8 @@ class Main(QWidget):
 
         
         
-        self.entrybox = QLineEdit()
+        self.entrybox = QLineEdit('0')
+        self.entrybox.setReadOnly(True)
         self.entrybox.setFixedSize(350, 60)
         self.entrybox.setAlignment(Qt.AlignmentFlag.AlignRight)
         
